@@ -148,8 +148,6 @@ nav .nav-button{
     text-align: center;
 }
 .headphone ,.mobile, .location, .zap, .book{
-    width: 380px;
-    height: 400px;
     border: 1px solid blueviolet;
     border-radius: 10px;
     padding: 10px;
@@ -223,10 +221,28 @@ nav .nav-button{
     background-color: orchid;
     border-radius: 50%;
 }
+.card{
+ background-color: rgb(46, 8, 82);
+ padding: 10px;
+}
 .Card-container{
-    margin-top: 40px;
+   
+    margin: 45px;
     line-height: 30px;
     display: grid;
-    row-gap: 10px;
-  grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+}
+.headphone{
+    grid-row:span 2 ;
+}
+.mobile{
+    grid-column: span 2;
+}
+.location{
+    grid-column: span 2;
+}
+.zap{
+    grid-column: span 2;
 }
