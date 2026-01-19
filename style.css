@@ -111,3 +111,20 @@ nav .nav-button{
     top: 88%;
     left: 35%;
 }
+.about-text h1{
+    width: 1200px;
+    height: 58px;
+    padding: 20px;
+    font-size:48 ;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.about-text p{
+    width: 1200px;
+    height: 148px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: gainsboro;
+}
