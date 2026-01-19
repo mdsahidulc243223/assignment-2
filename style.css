@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(22, 12, 31);
+}
 header{
-    width: 1360px;
+    width: 1358px;
     height: 70px;
     padding: 16px 200px;
     border: 1px solid black;
@@ -15,6 +18,7 @@ nav ul li{
     list-style: none;
 }
 nav ul{
+    color: white;
      display: flex;
      gap: 50px;
 }
@@ -28,7 +32,7 @@ nav{
     color:rgba(251, 9, 180, 1);
 }
 p{
-    color: green;
+    color: white;
     font-size: 40px;
     font-weight: bolder;
 }
@@ -40,4 +44,70 @@ nav .nav-button{
     padding: 12px 16px;
     border-radius: 30px;
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+}
+.hero{
+  background-image: url("./assets/hero-bg.png");
+    width: 100vw;
+  height: 500px;
+   background-position: center;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.hero-circle img{
+    position: absolute;
+    width: 370px;
+    height: 360px;
+    padding: 20px;
+    left: 36%;  
+}
+.hero-mic img{
+    position: absolute;
+    top:15%;
+    left: 45%;  
+}
+.hero-btn button {
+    width: 201px;
+    height: 44px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.hero-btn button img {
+  width: 20px;
+  height: 20px;
+}
+.hero-btn #hbtn1{
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+}
+.hero-btn #hbtn2{
+    color: white;
+    background-color: transparent;
+    border: 1px solid green;
+}
+.hero-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    width: 550px;
+    height: 73px;
+    text-align: center;
+}
+.hero-text p{
+    font-size: 16px;
+    width: 550px;
+    height: 19px;
+    text-align: center;
+}
+.hero-text{
+   padding: 20px;
+    position: absolute;
+    width: 550px;
+    height: 100px;
+    top:63%;
+    left: 27%;
+}
+.hero-btn{
+    position: absolute;
+    top: 88%;
+    left: 35%;
 }
