@@ -5,9 +5,10 @@
 }
 body{
     background-color: rgb(22, 12, 31);
+   max-width: 100%;
 }
 header{
-    width: 1358px;
+    width: 100%;
     height: 70px;
     padding: 16px 200px;
     border: 1px solid black;
@@ -282,23 +283,25 @@ nav .nav-button{
     padding-top: 50px;
     text-align: left;
 }
+.feature{
+ padding: 10px;
+ border-radius: 10px;
+ justify-content: center;
+
+}
 .feature-container{
-    display: flex;
+    margin: 45px;
+    display: grid;
     gap: 30px;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
 }
-.feature{
-    margin: 120px 50px;
-    width: 1300px;
-    height: 538px;
-    border: 1px solid blueviolet;
-}
 .feature h1{
-    color: white;
-    font-weight: bolder;
+    padding-top: 30px;
+    padding-left: 30%;
     font-size: 48px;
-    position: absolute;
-    left: 30%;
+    font-weight: bolder;
+    color: white;
    
 }
 .future-ai iframe{
@@ -309,10 +312,13 @@ nav .nav-button{
      width: 380px;
     height: 214px;
 }
-.remote-work,.road-map,.future-ai {
-   width: 380px;
-height: 226px; 
-border: 1px solid blueviolet;
+.future-ai,.remote-work,.road-map {
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .road-map iframe{
      width: 380px;
@@ -320,7 +326,7 @@ border: 1px solid blueviolet;
 }
 .future-ai h2{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
     padding: 10px;
 }
@@ -331,7 +337,7 @@ border: 1px solid blueviolet;
 }
 .remote-work h2{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
     padding: 10px;
 }
@@ -342,7 +348,7 @@ border: 1px solid blueviolet;
 }
 .road-map h2{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
     padding: 10px;
 }
@@ -350,4 +356,85 @@ border: 1px solid blueviolet;
     color: gray;
     font-size: 16px;
     padding: 10px;
+}
+.host h1{
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.host-contain{
+    position: relative;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    width: 1200px;
+    height: 280px;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+}
+.host-image{
+    padding: 20px;
+}
+.host-text h2{
+color: white;
+font-size: 40px;
+font-weight: bold;
+}
+.host-text p{
+    font-size: 16px;
+    color: gray;
+}
+.icon{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+footer{
+    background-image: url("./assets/footer-bg.png");
+   width:100vw;
+   height: 412px;
+    background-position: center;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.footer-container{
+    margin: 120px;
+    width: 1360px;
+    height: 172px;
+    position: absolute;
+   top: 5%;
+    left: 25%;
+  justify-content: center;
+ 
+}
+.footer-container span{
+color:rgba(251, 9, 180, 1);
+}
+.footer-container h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.footer-container p{
+    font-size: 16px;
+    color: gray;
+}
+.foter-icon{
+    display: flex;
+    gap: 15px;
+}
+@media screen and (max-width:576px) {
+    .nav-text,.nav-button{
+        display: none;
+        padding: 20px;
+    }
+    .hero{
+        max-width: 100%;
+    }
+    
 }
