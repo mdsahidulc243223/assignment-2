@@ -16,6 +16,12 @@ header{
     justify-content: center;
     align-items: center;
 }
+.hemburger{
+    display: none;
+}
+nav button:hover{
+    background-color: black;
+}
 nav ul li{
     list-style: none;
 }
@@ -67,6 +73,9 @@ nav .nav-button{
     position: absolute;
     top:15%;
     left: 45%;  
+}
+.hero-btn button:hover{
+    background-color: black;
 }
 .hero-btn button {
     width: 201px;
@@ -429,9 +438,14 @@ color:rgba(251, 9, 180, 1);
     display: flex;
     gap: 15px;
 }
+
 @media screen and (max-width:576px) {
     header{
         padding: 16px;
+    }
+    .hemburger{
+        margin-right: 40px;
+        display: inline;
     }
     .nav-text,.nav-button{
         display: none;
@@ -451,7 +465,7 @@ color:rgba(251, 9, 180, 1);
         left: 35%;
     }
     .hero-text{
-        width: 100%;
+        width: 350;
        left:-25%;
        top: 60%;
        text-align: center;
@@ -480,13 +494,17 @@ color:rgba(251, 9, 180, 1);
 .about-text p{
 width: 80%;
 height: auto;
-padding-left: 30px;
+padding-left: 80px;
  text-align: center;
 }
   .publicity{
     margin: 30px 10px;
     flex-wrap: wrap;
   }  
+  .card h1{
+    font-size: 20px;
+   padding-right: 30px;
+  }
   .Card-container{
     grid-template-columns: 1fr;
     margin: 20px;
@@ -511,12 +529,22 @@ padding-left: 30px;
      width: 380px;
     height: 144px;
   }
+  .feature h1{
+    font-size: 30px;
+    padding-right: 20px;
+  }
   .feature-container{
     grid-template-columns: 1fr;
    width: 320px;
     height: auto;
     margin: 15px;
   } 
+  .remote-work h2{
+    font-size: 25px;
+  }
+  .road-map h2{
+    font-size: 25px;
+  }
   .host-contain{
     width: 320px;
     height: auto;
@@ -535,6 +563,9 @@ padding-left: 30px;
     width: 100%;
     min-height: 350px;
     padding: 40px 20px;
+  }
+  footer h1{
+    font-size: 40px;
   }
   .footer-container{
     max-width: 1360px;
