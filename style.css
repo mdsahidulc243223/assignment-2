@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html,body{
     background-color: rgb(22, 12, 31);
-   max-width: 100%;
+   max-width: 1360px;
+   overflow-x: hidden;
 }
 header{
     width: 100%;
@@ -429,12 +430,111 @@ color:rgba(251, 9, 180, 1);
     gap: 15px;
 }
 @media screen and (max-width:576px) {
+    header{
+        padding: 16px;
+    }
     .nav-text,.nav-button{
         display: none;
         padding: 20px;
     }
     .hero{
-        max-width: 100%;
+    width: 100%;
+    height: 600px;
+    }
+    .hero-circle img{
+        width: 400px;
+        height: 400px;
+        left:10%;
+    }
+    .hero-mic img{
+        left: 40%;
+    }
+    .hero-text{
+        width: 100%;
+       left:-8%;
+       top: 60%;
+       text-align: center;
+    }
+    .hero-text p{
+    font-size: 16px;
+    width: 395px;
+    height: 10px;
+    padding-left: 100px;
+    text-align: center;
+    }
+    .hero-btn{
+        display: flex;
+        gap: 5px;
+        top: 82%;
+        left: 10%;
+        margin-top: 10px;
+    }
+    .about-text h1{
+        width: 100%;
+    }
+    .about-text hr{
+        width: 70%;
+        align-items: center;
+       margin-left: 30px;
+    }
+.about-text p{
+width: 90%;
+height: auto;
+padding-left: 30px;
+ text-align: center;
+}
+  .publicity{
+    margin: 30px 10px;
+    flex-wrap: wrap;
+  }  
+  .Card-container{
+    grid-template-columns: 1fr;
+    margin: 20px;
+  } 
+  .Card-container .headphone,.mobile,.location,.zap,.book{
+    width: 400px;
+    padding: 20px;
+  }
+  .mobile p{
+    width: 400px;
+    height: 144px;
+  }
+  .location p{
+     width: 380px;
+    height: 144px;
+  }
+  .zap p{
+     width: 300px;
+    height: 144px;
+  }
+.book p{
+     width: 380px;
+    height: 144px;
+  }
+  .feature-container{
+    grid-template-columns: 1fr;
+  }
+  .host-contain{
+    width: 380px;
+    height: auto;
+    margin: 20px;
+    margin-left: 10%;
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .host-contain .icon{
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+    gap: 10px;
+  }
+  footer{
+    width:380px;
+    height: auto;
+  }
+  .foter-icon{
+    flex-wrap: wrap;
+  }
+
     }
     
-}
