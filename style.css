@@ -77,23 +77,50 @@ nav .nav-button{
 .hero-btn button:hover{
     background-color: black;
 }
+.hero-btn{
+    display: flex;
+    gap: 20px;
+}
 .hero-btn button {
     width: 201px;
     height: 44px;
     border-radius: 20px;
+    color: black;
     justify-content: space-between;
 }
 .hero-btn button img {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
-.hero-btn #hbtn1{
-    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
-}
-.hero-btn #hbtn2{
+.hero-btn .hbtn1 span{
     color: white;
-    background-color: transparent;
-    border: 1px solid green;
+}
+.hero-btn .hbtn2 span{
+    color: white;
+}
+.hero-btn .hbtn1{
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    display: flex;
+    gap: 5px;
+    padding-top: 13px;
+   padding-left: 30px;
+   padding-right: 30px;
+
+}
+.hero-btn .hbtn2{
+     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+   display: flex;
+   padding-top: 13px;
+   padding-left: 30px;
+   padding-right: 30px;
+   border: 1px solid green;
+}
+button {
+    cursor: pointer;
+}
+
+.hbtn1:hover {
+    background-color: #000;
 }
 .hero-text h1{
     font-size: 50px;
